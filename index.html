@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+        <div class="calculator">
+            <input id="inputCalculate" type="text">
+            <div class="first-row">
+                <button onclick="keyPressed('%')" id="module">%</button>
+                <button onclick="allDelete('AC')" id="clear">AC</button>
+                <button onclick="delKeyHandler('DEL')" id="delete">DEL</button>
+                <button onclick="keyPressed('/')" id="devide"><img src="./divide-solid.svg" alt=""></button>
+            </div>
+            <div class="first-row">
+                <button onclick="keyPressed(7)" id="seven">7</button>
+                <button onclick="keyPressed(8)" id="eight">8</button>
+                <button onclick="keyPressed(9)" id="nine">9</button>
+                <button onclick="keyPressed('*')" id="multiply"><img src="./xmark-solid.svg" alt=""></button>
+            </div>
+            <div class="first-row">
+                <button onclick="keyPressed(4)" id="four">4</button>
+                <button onclick="keyPressed(5)" id="five">5</button>
+                <button onclick="keyPressed(6)" id="six">6</button>
+                <button onclick="keyPressed('-')" id="minus"><img src="./minus-solid.svg" alt=""></button>
+            </div>
+            <div class="first-row">
+                <button onclick="keyPressed(1)" id="one">1</button>
+                <button onclick="keyPressed(2)" id="two">2</button>
+                <button onclick="keyPressed(3)" id="three">3</button>
+                <button onclick="keyPressed('+')" id="plus"><img src="./plus-solid (1).svg" alt=""></button>
+            </div>
+            <div class="first-row">
+                <button  id="plmi">+/-</button>
+                <button onclick="keyPressed(0)" id="zero">0</button>
+                <button onclick="keyPressed('.')" id="dott">.</button>
+                <button onclick="calculateVal('=')" id="equal">=</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
